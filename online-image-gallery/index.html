@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Image Gallery — Like / Dislike</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Image Gallery</h1>
+    <div class="controls">
+      <button id="downloadCsv" class="btn">Download CSV Summary</button>
+      <button id="clearAll" class="btn secondary">Clear All Votes</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery" class="gallery" aria-live="polite"></section>
+  </main>
+
+  <footer class="footer">
+    <small>Votes are stored locally in your browser (localStorage). Open this page on any device to use it there too.</small>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
